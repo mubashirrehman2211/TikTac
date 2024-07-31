@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=Source+Serif+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.popup-1 {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.welcome-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.h3 {
+    color: #06540d;
+}
+
+.h4 {
+    color: #0e456f;
+}
+
+.play {
+    border: none;
+    background-image: linear-gradient(#278a27, #42a7e5);
+}
+
+.popup {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.popup-title {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-image: linear-gradient(#278a27, #42a7e5);
+    color: #fefefe;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 6px;
+}
+
+.popup-info {
+    border: 8px solid #06540d;
+    border-style: double;
+    border-radius: 8px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.winner {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(#278a27, #42a7e5);
+    padding: 5px;
+}
+
+h2 {
+    color: #fefefe;
+    font-size: 3rem;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+    z-index: 1;
+}
+
+.info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.turn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.boximg img {
+    height: 100px;
+    width: 90px;
+}
+
+.container {
+    width: 24.2%;
+    border: 4px solid #278a27;
+    border-style: double;
+    display: grid;
+    grid-template-columns: repeat(3, 8vw);
+    grid-template-rows: repeat(3, 8vw);
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 4px solid #278a27;
+    border-style: double;
+    font-size: 7em;
+}
+
+.box:hover {
+    background-image: linear-gradient(#278a27, #42a7e5);
+    color: #fefefe;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: #b63737;
+    background-color: #b63737;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.tradeMark {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.copyright {
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width:1150px) and (max-width: 1428px) {
+    .box {
+        font-size: 5.5em;
+    }
+}
+
+@media screen and (min-width:860px) and (max-width: 1150px) {
+    .container {
+        width: 30.8%;
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-rows: repeat(3, 10vw);
+    }
+
+    .box {
+        font-size: 5em;
+    }
+
+}
+
+
+@media screen and (min-width:708px) and (max-width: 860px) {
+    .container {
+        width: 37%;
+        grid-template-columns: repeat(3, 12vw);
+        grid-template-rows: repeat(3, 12vw);
+    }
+
+    .box {
+        font-size: 5em;
+    }
+
+}
+
+
+@media screen and (min-width:440px) and (max-width: 708px) {
+    .container {
+        width: 46%;
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+
+    .box {
+        font-size: 5em;
+    }
+
+
+}
+
+@media screen and (min-width:300px) and (max-width:440px) {
+    .container {
+        width: 67%;
+        grid-template-columns: repeat(3, 22vw);
+        grid-template-rows: repeat(3, 22vw);
+    }
+
+    .box {
+        font-size: 4em;
+    }
+
+    .popup-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .container {
+        width: 77%;
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
+    }
+
+    .box {
+        font-size: 3em;
+    }
+
+    .turn {
+        font-size: 1.6em;
+    }
+
+    .popup-info {
+        width: 100%;
+    }
+}
